@@ -64,6 +64,10 @@ jobs:
           goarch: arm
           libc: musl
           build_target: build-musl
+        - goos: linux
+          goarch: riscv64
+          libc: musl
+          build_target: build-musl
     steps:
     - name: "[preparation] checkout the current branch"
       uses: actions/checkout@v4
